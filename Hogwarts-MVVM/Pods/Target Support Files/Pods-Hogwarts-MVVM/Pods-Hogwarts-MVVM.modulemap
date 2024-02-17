@@ -1,0 +1,6 @@
+framework module Pods_Hogwarts_MVVM {
+  umbrella header "Pods-Hogwarts-MVVM-umbrella.h"
+
+  export *
+  module * { export * }
+}
