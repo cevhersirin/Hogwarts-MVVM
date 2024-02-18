@@ -13,6 +13,7 @@ class DashboardViewController: BaseViewController<DashboardViewModel> {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        viewModel.getCharacterList()
     }
     
 

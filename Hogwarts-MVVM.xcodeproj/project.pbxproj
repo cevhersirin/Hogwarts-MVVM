@@ -28,6 +28,10 @@
 		D7AD3B302B81018C009AF9D1 /* ActivityIndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B2F2B81018C009AF9D1 /* ActivityIndicatorProtocol.swift */; };
 		D7AD3B322B810197009AF9D1 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B312B810197009AF9D1 /* ActivityIndicatorView.swift */; };
 		D7AD3B352B8103FF009AF9D1 /* UIColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B342B8103FF009AF9D1 /* UIColorConstants.swift */; };
+		D7AD3B382B810B1C009AF9D1 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B372B810B1C009AF9D1 /* Endpoints.swift */; };
+		D7AD3B3E2B823F77009AF9D1 /* ChartacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B3D2B823F77009AF9D1 /* ChartacterModel.swift */; };
+		D7AD3B402B824516009AF9D1 /* WandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B3F2B824516009AF9D1 /* WandModel.swift */; };
+		D7AD3B422B8248FB009AF9D1 /* CharModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B412B8248FB009AF9D1 /* CharModel.swift */; };
 		DCB8197D0EF3BA873F899F67 /* Pods_Hogwarts_MVVM_Hogwarts_MVVMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7A68E929BA7D4010DCAE0C /* Pods_Hogwarts_MVVM_Hogwarts_MVVMUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +85,10 @@
 		D7AD3B2F2B81018C009AF9D1 /* ActivityIndicatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorProtocol.swift; sourceTree = "<group>"; };
 		D7AD3B312B810197009AF9D1 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		D7AD3B342B8103FF009AF9D1 /* UIColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorConstants.swift; sourceTree = "<group>"; };
+		D7AD3B372B810B1C009AF9D1 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		D7AD3B3D2B823F77009AF9D1 /* ChartacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartacterModel.swift; sourceTree = "<group>"; };
+		D7AD3B3F2B824516009AF9D1 /* WandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WandModel.swift; sourceTree = "<group>"; };
+		D7AD3B412B8248FB009AF9D1 /* CharModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharModel.swift; path = ../../../../../CharModel.swift; sourceTree = "<group>"; };
 		E29CCDB2D05F3D6CF8FB7D27 /* Pods-Hogwarts-MVVM-Hogwarts-MVVMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hogwarts-MVVM-Hogwarts-MVVMUITests.release.xcconfig"; path = "Target Support Files/Pods-Hogwarts-MVVM-Hogwarts-MVVMUITests/Pods-Hogwarts-MVVM-Hogwarts-MVVMUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +158,7 @@
 		D7AD3AE72B80FBE8009AF9D1 /* Hogwarts-MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				D7AD3B362B810B06009AF9D1 /* Network */,
 				D7AD3B332B8103F0009AF9D1 /* Constants */,
 				D7AD3B1E2B80FD81009AF9D1 /* Base */,
 				D7AD3B232B80FF31009AF9D1 /* Helper */,
@@ -243,6 +252,25 @@
 				D7AD3B342B8103FF009AF9D1 /* UIColorConstants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		D7AD3B362B810B06009AF9D1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D7AD3B3C2B823F61009AF9D1 /* Models */,
+				D7AD3B372B810B1C009AF9D1 /* Endpoints.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D7AD3B3C2B823F61009AF9D1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D7AD3B3D2B823F77009AF9D1 /* ChartacterModel.swift */,
+				D7AD3B412B8248FB009AF9D1 /* CharModel.swift */,
+				D7AD3B3F2B824516009AF9D1 /* WandModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		FC5BF77438934ADB1458FD4E /* Frameworks */ = {
@@ -495,14 +523,18 @@
 			files = (
 				D7AD3AED2B80FBE8009AF9D1 /* ViewController.swift in Sources */,
 				D7AD3B252B80FF43009AF9D1 /* Closures.swift in Sources */,
+				D7AD3B3E2B823F77009AF9D1 /* ChartacterModel.swift in Sources */,
 				D7AD3B302B81018C009AF9D1 /* ActivityIndicatorProtocol.swift in Sources */,
 				D7AD3B352B8103FF009AF9D1 /* UIColorConstants.swift in Sources */,
+				D7AD3B422B8248FB009AF9D1 /* CharModel.swift in Sources */,
+				D7AD3B382B810B1C009AF9D1 /* Endpoints.swift in Sources */,
 				D7AD3B2C2B81016D009AF9D1 /* LoadingProtocol.swift in Sources */,
 				D7AD3B1D2B80FC97009AF9D1 /* DashboardViewModel.swift in Sources */,
 				D7AD3B2E2B81017B009AF9D1 /* BlockingActivityIndicator.swift in Sources */,
 				D7AD3AE92B80FBE8009AF9D1 /* AppDelegate.swift in Sources */,
 				D7AD3B222B80FEDB009AF9D1 /* BaseViewModel.swift in Sources */,
 				D7AD3B272B80FF6C009AF9D1 /* Screen.swift in Sources */,
+				D7AD3B402B824516009AF9D1 /* WandModel.swift in Sources */,
 				D7AD3AEB2B80FBE8009AF9D1 /* SceneDelegate.swift in Sources */,
 				D7AD3B1B2B80FC6C009AF9D1 /* DashboardViewController.swift in Sources */,
 				D7AD3B322B810197009AF9D1 /* ActivityIndicatorView.swift in Sources */,
