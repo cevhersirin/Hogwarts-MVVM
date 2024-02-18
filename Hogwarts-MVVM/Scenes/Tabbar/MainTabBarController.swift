@@ -10,7 +10,7 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tabBar.tintColor = .appRed
+        tabBar.tintColor = .appTint
     
         let dashboardViewController = createDashboardViewController()
         let housesViewController = createHousesViewController()

@@ -7,64 +7,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F8BFABCC-07FB-49BD-8761-2406BF71E1F1"
-            shouldBeEnabled = "No"
+            uuid = "9725EDA4-0235-4D7A-B775-C01A5C5186EB"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Hogwarts-MVVM/Scenes/Dashboard/DashboardViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "subscribeViewModel()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F8BFABCC-07FB-49BD-8761-2406BF71E1F1 - f9e3c66dec75865d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Hogwarts_MVVM.DashboardViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "Hogwarts-MVVM"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cevhersirin/Desktop/Personal/Hogwarts-MVVM/Hogwarts-MVVM/Scenes/Dashboard/DashboardViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "92">
-               </Location>
-               <Location
-                  uuid = "F8BFABCC-07FB-49BD-8761-2406BF71E1F1 - f9e3c66dec75865d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Hogwarts_MVVM.DashboardViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "Hogwarts-MVVM"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cevhersirin/Desktop/Personal/Hogwarts-MVVM/Hogwarts-MVVM/Scenes/Dashboard/DashboardViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "112">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5B843FAE-8CF1-40E2-B943-BF348F6D172F"
+            uuid = "16FC775E-E8EE-4B47-B10A-A14F32452C5A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Hogwarts-MVVM/Scenes/Dashboard/DashboardViewModel.swift"
+            filePath = "Hogwarts-MVVM/Scenes/Dashboard/DashboardViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "getCharacterList()"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AC39A497-37C3-4FC6-BBA4-BA82C31B1C53"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hogwarts-MVVM/Scenes/Dashboard/DashboardViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "collectionView(_:numberOfItemsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
