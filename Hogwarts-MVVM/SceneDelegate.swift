@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         window?.makeKeyAndVisible()
-        let vc = DashboardViewController(viewModel: DashboardViewModel())
+        let vc = MainTabBarController()
         let nav = UINavigationController(rootViewController: vc)
         window?.rootViewController = nav
         guard let _ = (scene as? UIWindowScene) else { return }

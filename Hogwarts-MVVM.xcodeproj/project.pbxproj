@@ -32,6 +32,10 @@
 		D7AD3B3E2B823F77009AF9D1 /* ChartacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B3D2B823F77009AF9D1 /* ChartacterModel.swift */; };
 		D7AD3B402B824516009AF9D1 /* WandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B3F2B824516009AF9D1 /* WandModel.swift */; };
 		D7AD3B422B8248FB009AF9D1 /* CharModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B412B8248FB009AF9D1 /* CharModel.swift */; };
+		D7AD3B452B8295B0009AF9D1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B442B8295B0009AF9D1 /* MainTabBarController.swift */; };
+		D7AD3B482B829C4D009AF9D1 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B472B829C4D009AF9D1 /* UIImage+Extension.swift */; };
+		D7AD3B4B2B829CEE009AF9D1 /* HousesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B4A2B829CEE009AF9D1 /* HousesViewController.swift */; };
+		D7AD3B4D2B829CFE009AF9D1 /* HousesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B4C2B829CFE009AF9D1 /* HousesViewModel.swift */; };
 		DCB8197D0EF3BA873F899F67 /* Pods_Hogwarts_MVVM_Hogwarts_MVVMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7A68E929BA7D4010DCAE0C /* Pods_Hogwarts_MVVM_Hogwarts_MVVMUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +93,10 @@
 		D7AD3B3D2B823F77009AF9D1 /* ChartacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartacterModel.swift; sourceTree = "<group>"; };
 		D7AD3B3F2B824516009AF9D1 /* WandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WandModel.swift; sourceTree = "<group>"; };
 		D7AD3B412B8248FB009AF9D1 /* CharModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharModel.swift; path = ../../../../../CharModel.swift; sourceTree = "<group>"; };
+		D7AD3B442B8295B0009AF9D1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		D7AD3B472B829C4D009AF9D1 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		D7AD3B4A2B829CEE009AF9D1 /* HousesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesViewController.swift; sourceTree = "<group>"; };
+		D7AD3B4C2B829CFE009AF9D1 /* HousesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesViewModel.swift; sourceTree = "<group>"; };
 		E29CCDB2D05F3D6CF8FB7D27 /* Pods-Hogwarts-MVVM-Hogwarts-MVVMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hogwarts-MVVM-Hogwarts-MVVMUITests.release.xcconfig"; path = "Target Support Files/Pods-Hogwarts-MVVM-Hogwarts-MVVMUITests/Pods-Hogwarts-MVVM-Hogwarts-MVVMUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,6 +166,7 @@
 		D7AD3AE72B80FBE8009AF9D1 /* Hogwarts-MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				D7AD3B462B829C3E009AF9D1 /* Extensions */,
 				D7AD3B362B810B06009AF9D1 /* Network */,
 				D7AD3B332B8103F0009AF9D1 /* Constants */,
 				D7AD3B1E2B80FD81009AF9D1 /* Base */,
@@ -195,7 +204,9 @@
 		D7AD3B182B80FC16009AF9D1 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				D7AD3B492B829CDD009AF9D1 /* Houses */,
 				D7AD3B192B80FC34009AF9D1 /* Dashboard */,
+				D7AD3B432B829596009AF9D1 /* Tabbar */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -271,6 +282,31 @@
 				D7AD3B3F2B824516009AF9D1 /* WandModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D7AD3B432B829596009AF9D1 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				D7AD3B442B8295B0009AF9D1 /* MainTabBarController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		D7AD3B462B829C3E009AF9D1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D7AD3B472B829C4D009AF9D1 /* UIImage+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D7AD3B492B829CDD009AF9D1 /* Houses */ = {
+			isa = PBXGroup;
+			children = (
+				D7AD3B4A2B829CEE009AF9D1 /* HousesViewController.swift */,
+				D7AD3B4C2B829CFE009AF9D1 /* HousesViewModel.swift */,
+			);
+			path = Houses;
 			sourceTree = "<group>";
 		};
 		FC5BF77438934ADB1458FD4E /* Frameworks */ = {
@@ -528,12 +564,16 @@
 				D7AD3B352B8103FF009AF9D1 /* UIColorConstants.swift in Sources */,
 				D7AD3B422B8248FB009AF9D1 /* CharModel.swift in Sources */,
 				D7AD3B382B810B1C009AF9D1 /* Endpoints.swift in Sources */,
+				D7AD3B4D2B829CFE009AF9D1 /* HousesViewModel.swift in Sources */,
+				D7AD3B482B829C4D009AF9D1 /* UIImage+Extension.swift in Sources */,
 				D7AD3B2C2B81016D009AF9D1 /* LoadingProtocol.swift in Sources */,
 				D7AD3B1D2B80FC97009AF9D1 /* DashboardViewModel.swift in Sources */,
 				D7AD3B2E2B81017B009AF9D1 /* BlockingActivityIndicator.swift in Sources */,
 				D7AD3AE92B80FBE8009AF9D1 /* AppDelegate.swift in Sources */,
+				D7AD3B4B2B829CEE009AF9D1 /* HousesViewController.swift in Sources */,
 				D7AD3B222B80FEDB009AF9D1 /* BaseViewModel.swift in Sources */,
 				D7AD3B272B80FF6C009AF9D1 /* Screen.swift in Sources */,
+				D7AD3B452B8295B0009AF9D1 /* MainTabBarController.swift in Sources */,
 				D7AD3B402B824516009AF9D1 /* WandModel.swift in Sources */,
 				D7AD3AEB2B80FBE8009AF9D1 /* SceneDelegate.swift in Sources */,
 				D7AD3B1B2B80FC6C009AF9D1 /* DashboardViewController.swift in Sources */,
