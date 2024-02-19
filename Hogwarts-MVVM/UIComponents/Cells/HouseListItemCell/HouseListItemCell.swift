@@ -1,13 +1,13 @@
 //
-//  ListItemCollectionViewCell.swift
+//  HouseListItemCell.swift
 //  Hogwarts-MVVM
 //
-//  Created by Cevher Şirin on 18.02.2024.
+//  Created by Cevher Şirin on 19.02.2024.
 //
 
 import Kingfisher
 
-class ListItemCollectionViewCell: UICollectionViewCell, ReusableView {
+class HouseListItemCell: UICollectionViewCell, ReusableView {
     
     private var contentStackView: UIStackView = {
         let stackView = UIStackView()
@@ -21,6 +21,7 @@ class ListItemCollectionViewCell: UICollectionViewCell, ReusableView {
     
     private var imageView: UIImageView = {
         let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
         return imageView
     }()
     
@@ -54,7 +55,7 @@ class ListItemCollectionViewCell: UICollectionViewCell, ReusableView {
 }
 
 //MARK: UI
-extension ListItemCollectionViewCell {
+extension HouseListItemCell {
     
     private func addSubviews() {
         backgroundColor = UIColorConstants.shared.backgroundColor
@@ -75,11 +76,10 @@ extension ListItemCollectionViewCell {
     
     private func addInformationStack() {
         addSubview(informationsStackView)
-        informationsStackView.topToBottom(of: contentStackView)
+        informationsStackView.topToBottom(of: contentStackView).constant = -10
         informationsStackView.edgesToSuperview(excluding: .top)
         informationsStackView.height(30)
         addDisplayNameLabe()
-        addSpacer()
     }
     
     private func addDisplayNameLabe() {
@@ -94,15 +94,23 @@ extension ListItemCollectionViewCell {
 }
 
 //MARK: Configure
-extension ListItemCollectionViewCell {
+extension HouseListItemCell {
     
-    public func setCell(viewModel: ListItemCellViewModel) {
-        if let imageUrl = viewModel.imageUrl, let url = URL(string: imageUrl) {
-            imageView.kf.setImage(with: url)
-        } else {
-            imageView.image = .imgDefault
-            imageView.contentMode = .scaleAspectFill
-        }
+    public func setCell(viewModel: HouseListItemModel) {
         nameLabel.text = viewModel.name
+        guard let house = viewModel.house else { return }
+        switch house {
+        case .gryffindor:
+            imageView.image = .imgGryffindor
+        case .hufflepuff:
+            imageView.image = .imgHufflepuff
+        case .ravenclaw:
+            imageView.image = .imgRavenclaw
+        case .slytherin:
+            imageView.image = .imgSlytherin
+        case .none:
+            break
+        }
     }
 }
+

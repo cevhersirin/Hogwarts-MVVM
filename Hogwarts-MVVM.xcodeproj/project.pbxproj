@@ -31,7 +31,6 @@
 		D7AD3B382B810B1C009AF9D1 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B372B810B1C009AF9D1 /* Endpoints.swift */; };
 		D7AD3B3E2B823F77009AF9D1 /* ChartacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B3D2B823F77009AF9D1 /* ChartacterModel.swift */; };
 		D7AD3B402B824516009AF9D1 /* WandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B3F2B824516009AF9D1 /* WandModel.swift */; };
-		D7AD3B422B8248FB009AF9D1 /* CharModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B412B8248FB009AF9D1 /* CharModel.swift */; };
 		D7AD3B452B8295B0009AF9D1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B442B8295B0009AF9D1 /* MainTabBarController.swift */; };
 		D7AD3B482B829C4D009AF9D1 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B472B829C4D009AF9D1 /* UIImage+Extension.swift */; };
 		D7AD3B4B2B829CEE009AF9D1 /* HousesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B4A2B829CEE009AF9D1 /* HousesViewController.swift */; };
@@ -41,6 +40,9 @@
 		D7AD3B552B82A0CE009AF9D1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B542B82A0CE009AF9D1 /* UIView+Extension.swift */; };
 		D7AD3B572B82A0F6009AF9D1 /* ListItemCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B562B82A0F6009AF9D1 /* ListItemCellViewModel.swift */; };
 		D7AD3B592B82A4D5009AF9D1 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B582B82A4D5009AF9D1 /* UICollectionView+Extension.swift */; };
+		D7AD3B5B2B836BFB009AF9D1 /* CharModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B5A2B836BFB009AF9D1 /* CharModel.swift */; };
+		D7AD3B5F2B83E85E009AF9D1 /* HouseListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B5E2B83E85E009AF9D1 /* HouseListItemCell.swift */; };
+		D7AD3B612B83E868009AF9D1 /* HouseListItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AD3B602B83E868009AF9D1 /* HouseListItemModel.swift */; };
 		DCB8197D0EF3BA873F899F67 /* Pods_Hogwarts_MVVM_Hogwarts_MVVMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7A68E929BA7D4010DCAE0C /* Pods_Hogwarts_MVVM_Hogwarts_MVVMUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,7 +99,6 @@
 		D7AD3B372B810B1C009AF9D1 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		D7AD3B3D2B823F77009AF9D1 /* ChartacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartacterModel.swift; sourceTree = "<group>"; };
 		D7AD3B3F2B824516009AF9D1 /* WandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WandModel.swift; sourceTree = "<group>"; };
-		D7AD3B412B8248FB009AF9D1 /* CharModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharModel.swift; path = ../../../../../CharModel.swift; sourceTree = "<group>"; };
 		D7AD3B442B8295B0009AF9D1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		D7AD3B472B829C4D009AF9D1 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		D7AD3B4A2B829CEE009AF9D1 /* HousesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +108,9 @@
 		D7AD3B542B82A0CE009AF9D1 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		D7AD3B562B82A0F6009AF9D1 /* ListItemCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemCellViewModel.swift; sourceTree = "<group>"; };
 		D7AD3B582B82A4D5009AF9D1 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		D7AD3B5A2B836BFB009AF9D1 /* CharModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharModel.swift; sourceTree = "<group>"; };
+		D7AD3B5E2B83E85E009AF9D1 /* HouseListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListItemCell.swift; sourceTree = "<group>"; };
+		D7AD3B602B83E868009AF9D1 /* HouseListItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListItemModel.swift; sourceTree = "<group>"; };
 		E29CCDB2D05F3D6CF8FB7D27 /* Pods-Hogwarts-MVVM-Hogwarts-MVVMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hogwarts-MVVM-Hogwarts-MVVMUITests.release.xcconfig"; path = "Target Support Files/Pods-Hogwarts-MVVM-Hogwarts-MVVMUITests/Pods-Hogwarts-MVVM-Hogwarts-MVVMUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -289,8 +293,8 @@
 		D7AD3B3C2B823F61009AF9D1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D7AD3B5A2B836BFB009AF9D1 /* CharModel.swift */,
 				D7AD3B3D2B823F77009AF9D1 /* ChartacterModel.swift */,
-				D7AD3B412B8248FB009AF9D1 /* CharModel.swift */,
 				D7AD3B3F2B824516009AF9D1 /* WandModel.swift */,
 			);
 			path = Models;
@@ -326,8 +330,8 @@
 		D7AD3B4E2B82A060009AF9D1 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				D7AD3B4F2B82A082009AF9D1 /* ListItemCollectionViewCell.swift */,
-				D7AD3B562B82A0F6009AF9D1 /* ListItemCellViewModel.swift */,
+				D7AD3B5D2B83E84A009AF9D1 /* HouseListItemCell */,
+				D7AD3B5C2B83E829009AF9D1 /* CharacterListItemCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -338,6 +342,24 @@
 				D7AD3B522B82A0A3009AF9D1 /* ReusableView.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D7AD3B5C2B83E829009AF9D1 /* CharacterListItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				D7AD3B4F2B82A082009AF9D1 /* ListItemCollectionViewCell.swift */,
+				D7AD3B562B82A0F6009AF9D1 /* ListItemCellViewModel.swift */,
+			);
+			path = CharacterListItemCell;
+			sourceTree = "<group>";
+		};
+		D7AD3B5D2B83E84A009AF9D1 /* HouseListItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				D7AD3B5E2B83E85E009AF9D1 /* HouseListItemCell.swift */,
+				D7AD3B602B83E868009AF9D1 /* HouseListItemModel.swift */,
+			);
+			path = HouseListItemCell;
 			sourceTree = "<group>";
 		};
 		FC5BF77438934ADB1458FD4E /* Frameworks */ = {
@@ -596,11 +618,13 @@
 				D7AD3B572B82A0F6009AF9D1 /* ListItemCellViewModel.swift in Sources */,
 				D7AD3B502B82A082009AF9D1 /* ListItemCollectionViewCell.swift in Sources */,
 				D7AD3B352B8103FF009AF9D1 /* UIColorConstants.swift in Sources */,
-				D7AD3B422B8248FB009AF9D1 /* CharModel.swift in Sources */,
 				D7AD3B382B810B1C009AF9D1 /* Endpoints.swift in Sources */,
 				D7AD3B4D2B829CFE009AF9D1 /* HousesViewModel.swift in Sources */,
 				D7AD3B482B829C4D009AF9D1 /* UIImage+Extension.swift in Sources */,
 				D7AD3B2C2B81016D009AF9D1 /* LoadingProtocol.swift in Sources */,
+				D7AD3B612B83E868009AF9D1 /* HouseListItemModel.swift in Sources */,
+				D7AD3B5B2B836BFB009AF9D1 /* CharModel.swift in Sources */,
+				D7AD3B5F2B83E85E009AF9D1 /* HouseListItemCell.swift in Sources */,
 				D7AD3B1D2B80FC97009AF9D1 /* DashboardViewModel.swift in Sources */,
 				D7AD3B2E2B81017B009AF9D1 /* BlockingActivityIndicator.swift in Sources */,
 				D7AD3AE92B80FBE8009AF9D1 /* AppDelegate.swift in Sources */,

@@ -21,7 +21,7 @@ class MainTabBarController: UITabBarController {
         ]
     }
     private func createDashboardViewController() -> UINavigationController {
-        let homeViewModel = DashboardViewModel()
+        let homeViewModel = DashboardViewModel(title: "All Characters")
         let homeViewController = DashboardViewController(viewModel: homeViewModel)
         let navController = UINavigationController(rootViewController: homeViewController)
         let image = (UIImage(named: "ic_list") ?? .icList).resizeImage(targetSize: .init(width: 40, height: 40))

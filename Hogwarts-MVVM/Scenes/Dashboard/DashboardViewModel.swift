@@ -10,7 +10,14 @@ import Alamofire
 class DashboardViewModel: BaseViewModel {
     
     var list: [CharModel]? = []
-    public var getDataSuccess: VoidClosure?
+    var title: String = ""
+    var getDataSuccess: VoidClosure?
+    
+    init(list: [CharModel]? = nil, getDataSuccess: VoidClosure? = nil, title: String = "") {
+        self.list = list
+        self.getDataSuccess = getDataSuccess
+        self.title = title
+    }
     
     func getCharacterList() {
         showLoading?()
@@ -20,8 +27,10 @@ class DashboardViewModel: BaseViewModel {
             hideLoading?()
             switch result.result {
             case .success(let response):
-                self.list = response
-                self.getDataSuccess?()
+                if list == nil {
+                    self.list = response
+                    self.getDataSuccess?()
+                }
             case .failure(let error):
                 print(error.localizedDescription)
             }

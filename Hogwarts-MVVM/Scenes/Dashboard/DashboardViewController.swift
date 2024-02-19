@@ -27,13 +27,6 @@ class DashboardViewController: BaseViewController<DashboardViewModel> {
         viewModel.getCharacterList()
         addSubviews()
         configureContents()
-        
-        title = "All Characters"
-        var image = UIImage.icList.resizeImage(targetSize: .init(width: 20, height: 20))
-        image = image?.withRenderingMode(.alwaysOriginal)
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: image , style: .plain, target: self, action: nil)
-        self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationController?.navigationItem.largeTitleDisplayMode = .always
     }
     
     private func subscribeViewModel() {
@@ -61,12 +54,23 @@ extension DashboardViewController {
 extension DashboardViewController {
     
     private func configureContents() {
+        configureNavBar()
         configureCollectionView()
     }
     
     private func configureCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
+    }
+    
+    private func configureNavBar() {
+        title = viewModel.title
+        var image = UIImage.icList.resizeImage(targetSize: .init(width: 20, height: 20))
+        image = image?.withRenderingMode(.alwaysTemplate)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: image , style: .plain, target: self, action: nil)
+        navigationItem.rightBarButtonItem?.tintColor = .white
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationItem.largeTitleDisplayMode = .always
     }
 }
 
